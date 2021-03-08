@@ -87,7 +87,7 @@ There are two options you can specify while making a G2PConverter instance. You 
     
 The second option is to set `show_prediction_tag=True` to get information about which pronunciations were predicted by the model and which ones were looked up in the pronunciation dictionary.
 
+    >>> c = G2PConverter(show_prediction_tag=True)
+
 ## Notes
 While making a new instance of the class G2PConverter, tensorflow might output several logging messages and/or several WARNINGS that the model is not compiled. These can be ignored, the model should work either way.
-
-    c = G2PConverter(show_prediction_tag=True)
