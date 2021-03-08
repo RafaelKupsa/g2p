@@ -85,9 +85,13 @@ There are two options you can specify while making a G2PConverter instance. You 
 
     >>> c = G2PConverter(embeddings=False)
     
+    'K OH N V EH AX T R AX | D II Z EX N | T EH K S T | IH N | Z AI N EX | AU S SH P R AA X EX | B IH T EX'
+    
 The second option is to set `show_prediction_tag=True` to get information about which pronunciations were predicted by the model and which ones were looked up in the pronunciation dictionary.
 
     >>> c = G2PConverter(show_prediction_tag=True)
+    
+    'K OH N V EH AX T II R EX (pred) | D II Z EX N | T EH K S T | IH N | Z AI N EX | AU S SH P R AA X EX | B IH T EX'
 
 ## Notes
 While making a new instance of the class G2PConverter, tensorflow might output several logging messages and/or several WARNINGS that the model is not compiled. These can be ignored, the model should work either way.
